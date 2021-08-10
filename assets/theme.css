@@ -9135,7 +9135,7 @@ hr {
   border-style: solid;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
   width: 0;
-  border-width: 8px;
+  border-width: 6px;
   border-color: #886cfe #fff #fff #886cfe;
   transition: border-width 0.2s;
 }
@@ -9147,6 +9147,6 @@ hr {
   overflow: hidden;
   transition: border-radius 0s;
 }
-#btnStyles:hover:before {
-  border-color: #886cfe transparent transparent #886cfe;
+#btnStyles:hover:after {
+  border-bottom-right-radius: 200px;
 }
