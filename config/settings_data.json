@@ -180,18 +180,18 @@
           "show_currency_selector": true
         }
       },
-      "1628536621aa1a6994": {
-        "type": "featured-products",
+      "162862753870a799cd": {
+        "type": "feature-products",
         "settings": {
-          "title": "Feature Products",
-          "collection": "adidas",
+          "title": "Feature Products Section",
+          "collection": "men",
           "grid": 4,
           "show_view_all": false
         }
       }
     },
     "content_for_index": [
-      "1628536621aa1a6994"
+      "162862753870a799cd"
     ]
   },
   "presets": {
