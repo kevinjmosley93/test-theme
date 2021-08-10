@@ -9116,3 +9116,37 @@ hr {
 .store-availability-list__phone {
   margin-bottom: 0;
 }
+
+#btnStyles {
+  font-weight: bold;
+  color: white;
+  background: #a792f8;
+  border: none;
+  position: relative;
+  padding: 0.5rem 1rem;
+  overflow: hidden;
+  transition: border-radius 0s;
+}
+#btnStyles:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-style: solid;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+  width: 0;
+  border-width: 8px;
+  border-color: #886cfe #fff #fff #886cfe;
+  transition: border-width 0.2s;
+}
+#btnStyles:hover {
+  color: #000;
+  background: transparent;
+  border: #886cfe solid 1px;
+  padding: 0.5rem 1rem;
+  overflow: hidden;
+  transition: border-radius 0s;
+}
+#btnStyles:hover:before {
+  border-color: #886cfe transparent transparent #886cfe;
+}
