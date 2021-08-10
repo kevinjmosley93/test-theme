@@ -9132,21 +9132,24 @@ hr {
   position: absolute;
   bottom: 0;
   right: 0;
-  border-style: solid;
-  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
   width: 0;
-  border-width: 6px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+  border-style: solid;
+  border-width: 8px;
   border-color: #886cfe #fff #fff #886cfe;
   transition: border-width 0.2s;
 }
 #btnStyles:hover {
   color: #000;
   background: transparent;
-  border: #886cfe solid 1px;
+  border: #886cfe solid 2.5px;
   padding: 0.5rem 1rem;
   overflow: hidden;
   transition: border-radius 0s;
 }
-#btnStyles:hover:after {
-  border-bottom-right-radius: 200px;
+#btnStyles:hover:before {
+  right: -7px;
+  bottom: -7px;
+  border-color: #886cfe #fff #fff #886cfe;
+  border-width: 7px;
 }
