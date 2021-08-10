@@ -218,7 +218,9 @@
           <div class="product-form__item product-form__item--submit
                 {%- if section.settings.enable_payment_button %} product-form__item--payment-button {%- endif -%}
                 {%- if product.has_only_default_variant %} product-form__item--no-variants {%- endif -%}">
-            <button type="submit" name="add" {% unless current_variant.available %} aria-disabled="true" {% endunless %}
+
+            <button type="submit" name="add" id="btnStyles" {% unless current_variant.available %} aria-disabled="true"
+              {% endunless %}
               aria-label="{% unless current_variant.available %}{{ 'products.product.sold_out' | t }}{% else %}{{ 'products.product.add_to_cart' | t }}{% endunless %}"
               class="btn product-form__cart-submit{% if section.settings.enable_payment_button and product.selling_plan_groups == empty %} btn--secondary-accent{% endif %}"
               {% if settings.enable_ajax %}aria-haspopup="dialog" {% endif %} data-add-to-cart>
@@ -239,8 +241,6 @@
           </div>
         </div>
         {% endform %}
-
-        <script>console.log('this is product info', {{ product | json }});</script>
 
       </div>
       {%- comment -%}
