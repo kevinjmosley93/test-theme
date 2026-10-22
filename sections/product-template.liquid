@@ -160,7 +160,7 @@
         </div>
         {%- endif -%}
 
-        {% capture "form_classes" -%}
+        {% capture form_classes -%}
         product-form product-form-{{ section.id }}
         {%- if section.settings.enable_payment_button and product.has_only_default_variant %}
         product-form--payment-button-no-variants {%- endif -%}
@@ -662,4 +662,13 @@
 }
 ]
 }
-{% endschema %}
+{% endschema %}{%- comment -%}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: '{% capture "form_classes" -%}'
+  to: "{% capture form_classes -%}"
+  position: 8112..8139
+{%- endcomment -%}
